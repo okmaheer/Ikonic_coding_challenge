@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Connections;
+use App\Models\User;
+use App\Services\ConnectionService;
 
 class HomeController extends Controller
 {
@@ -21,8 +24,23 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('home');
+    public function index(Request $request)
+    {   
+    
+          
+        $type= $request->query('type')?$request->query('type'):'suggestions';
+        $user = auth()->user();
+
+        $sendRequests =      
+            
+        $receivedRequests = ConnectionService::receivedRequests($user); 
+       
+        $connections = ConnectionService::connections($user); 
+        $connections = ConnectionService::getCommonConnection($connections,$user);
+        $suggestions = ConnectionService::suggestions($user);
+
+       
+        
+        return view('home',compact("sendRequests","receivedRequests","connections","suggestions","type"));
     }
 }
