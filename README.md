@@ -1,7 +1,7 @@
 # Ikonic Coding Challenge 💻
 
 Every users password is  1234 For Example:user1@gmail.com password 1234 same goes for others
-# FUNCTIONALITY
+# Functionality Video of Project
 https://github.com/okmaheer/Ikonic_coding_challenge/tree/main/public/video/view.webm
 
 ## Tech Stack for this challenge 🐘
