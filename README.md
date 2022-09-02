@@ -1,10 +1,6 @@
 # Ikonic Coding Challenge 💻
 
-Hello and welcome to the Ikonic Coding Challenge. Thank you for your interest in becoming part of our team. The purpose of this challenge is to give you a feeling for the tasks that await you at Ikonic and to familiarize you with our current stack.
-
-The whole process should not take you longer than a few hours.
-
-PLEASE NOTE: For us the most important aspect we are looking for in the code challenge is that you respect the guidelines and specifications given in the description. This is the only way we can identify whether you are able to follow the structure of our project in the way that we imagine it.
+Every users password is  1234 For Example:user1@gmail.com password 1234 same goes for others
 
 ## Tech Stack for this challenge 🐘
 
